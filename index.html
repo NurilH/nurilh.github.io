@@ -1,43 +1,221 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nuril Huda</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background-color: #ffffff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .title {
+            font-size: 18px;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .subsection {
+            margin-bottom: 15px;
+        }
+        .subsection-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-
-    <div class="profile-photo">
-        <div class="blur-wrapper">
-        <img src="foto.jpg" alt="Foto Profil">
+    <div class="header">
+        <div class="name">NURIL HUDA</div>
+        <div class="title">BACKEND ENGINEER</div>
+        <div class="contact-info">
+            <div class="contact-item">📧 Nurilhuda7337@gmail.com</div>
+            <div class="contact-item">📱 0856-4883-8973</div>
+            <div class="contact-item">
+                🔗 <a href="https://linkedin.com/in/nuril-huda-87b279214">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                💻 <a href="https://github.com/Nurilli">GitHub</a>
+            </div>
+            <div class="contact-item">📍 Lamongan, Jawa Timur</div>
         </div>
     </div>
-    <div class="profile-info">
-      <h1>Nuril Huda</h1>
-      <p class="bio">Saya adalah seorang backend developer dengan lebih dari 3 tahun pengalaman menggunakan Golang untuk membangun sistem yang efisien dan scalable.</p>
-      
-      <h2>Biodata</h2>
-      <ul class="biodata">
-        <li><strong>Nama:</strong> Nuril Huda</li>
-        <li><strong>Email:</strong> nurilhuda7337@gmail.com</li>
-        <li><strong>Domisili:</strong> Lamongan, Indonesia</li>
-        <li><strong>Telepon:</strong> 0856-4883-8973</li>
-      </ul>
 
-      <h2>Keahlian</h2>
-      <ul class="skills">
-        <li>Golang</li>
-        <li>RESTful API</li>
-        <li>PostgreSQL / MySQL</li>
-        <li>Docker</li>
-        <li>Git & CI/CD</li>
-        <li>Unit Testing</li>
-        <li>Kafka</li>
-        <li>Redis</li>
-      </ul>
+    <div class="section">
+        <div class="section-title">PROFIL PROFESIONAL</div>
+        <p>Backend Engineer dengan pengalaman kuat dalam mengembangkan API yang skalabel menggunakan Golang dan teknologi cloud modern (AWS, Docker, Redis). Lulusan Teknik Informatika Universitas Brawijaya dan program Backend Immersive Alterra Academy. Berpengalaman dalam membangun sistem backend yang andal, mengoptimalkan performa aplikasi, dan menerapkan best practices dalam pengembangan perangkat lunak.</p>
     </div>
-  </div>
+
+    <div class="section">
+        <div class="section-title">PENGALAMAN KERJA</div>
+        <div class="subsection">
+            <div class="subsection-title">Backend Engineer - Kreditplus</div>
+            <div class="date">Maret 2022 - Juni 2025</div>
+            <ul>
+                <li>Mengembangkan dan memelihara layanan backend untuk aplikasi merchant menggunakan Golang</li>
+                <li>Mengimplementasikan RESTful API dan terintegrasi dengan layanan internal dan eksternal</li>
+                <li>Mengoptimalkan performa kode dan merefaktor modul legacy untuk meningkatkan keandalan</li>
+                <li>Berkolaborasi dengan tim frontend dan QA untuk deployment dan perbaikan bug</li>
+                <li>Aplikasi: <a href="https://merchant.kreditplus.com">https://merchant.kreditplus.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">PROYEK PORTOFOLIO</div>
+        
+        <div class="subsection">
+            <div class="subsection-title">Barengin - Marketplace Layanan Akun Digital</div>
+            <div class="date">Proyek Capstone Bootcamp</div>
+            <ul>
+                <li>Membuat RESTful API menggunakan Golang dengan tema marketplace untuk pemesanan layanan akun digital yang dapat digunakan bersama</li>
+                <li>Sudah dideploy di server AWS secara otomatis menggunakan CI/CD</li>
+                <li>Link: <a href="https://github.com/project-capstone">https://github.com/project-capstone</a></li>
+            </ul>
+        </div>
+
+        <div class="subsection">
+            <div class="subsection-title">Airbnb Clone - Marketplace Penginapan</div>
+            <div class="date">Proyek Bootcamp</div>
+            <ul>
+                <li>Membuat RESTful API menggunakan Golang dengan tema marketplace untuk booking penginapan dan homestay seperti Airbnb</li>
+                <li>Dideploy di server AWS secara otomatis menggunakan CI/CD</li>
+                <li>Link: <a href="https://github.com/Nurilli/project2-airbnb">https://github.com/Nurilli/project2-airbnb</a></li>
+            </ul>
+        </div>
+
+        <div class="subsection">
+            <div class="subsection-title">E-Commerce API</div>
+            <div class="date">Proyek Bootcamp</div>
+            <ul>
+                <li>Membuat RESTful API menggunakan Golang dengan tema E-Commerce</li>
+                <li>Dideploy di server AWS secara otomatis menggunakan CI/CD</li>
+                <li>Link: <a href="https://github.com/Nurilli/project1-alta-be4-E-commerce">https://github.com/Nurilli/project1-alta-be4-E-commerce</a></li>
+            </ul>
+        </div>
+
+        <div class="subsection">
+            <div class="subsection-title">Digital Invitation Web</div>
+            <ul>
+                <li>Membuat proyek undangan digital berbasis website</li>
+                <li>Dapat diakses melalui domain: <a href="https://invitingyouto.com">https://invitingyouto.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">KEAHLIAN TEKNIS</div>
+        <div class="skills">
+            <div class="skill-item">Golang</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">C++</div>
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">Redis</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">AWS</div>
+            <div class="skill-item">Kafka</div>
+            <div class="skill-item">Jira</div>
+            <div class="skill-item">GitHub</div>
+            <div class="skill-item">Postman</div>
+            <div class="skill-item">Mockery</div>
+            <div class="skill-item">Unit Testing</div>
+            <div class="skill-item">GitHub Actions</div>
+            <div class="skill-item">RESTful API</div>
+            <div class="skill-item">CI/CD</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">PENDIDIKAN</div>
+        <div class="subsection">
+            <div class="subsection-title">Bootcamp Immersive Backend Engineer</div>
+            <div class="date">2021 - 2022</div>
+            <div>Alterra Academy</div>
+        </div>
+        <div class="subsection">
+            <div class="subsection-title">Sarjana Teknik Informatika</div>
+            <div class="date">2015 - 2020</div>
+            <div>Universitas Brawijaya</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">PENGALAMAN INTERNSHIP</div>
+        <div class="subsection">
+            <div class="subsection-title">Internship di ASTRA International Malang</div>
+            <ul>
+                <li>IT Support untuk instalasi jaringan komputer di perusahaan Toyota AUTO2000 Singosari yang merupakan subsidiary ASTRA International</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
